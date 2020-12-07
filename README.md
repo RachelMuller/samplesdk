@@ -1,7 +1,7 @@
 # samplesdk
 Below are the steps to use the Via API for the use case related to reassigning work for agents.
 
- - `Step 1`: Exchange your client credentials for an oauth token.
+ - **Step 1:** Exchange your client credentials for an oauth token.
  
   ```
     // Configure HTTP basic authorization: basicAuth
@@ -51,7 +51,7 @@ Below are the steps to use the Via API for the use case related to reassigning w
     {
         Debug.Print("Exception when calling GetWorkTypesCollection: " + e.Message );
     }
-```
+  ```
 
 - Step 3: Retrieve the current assigned users for the selected work type.
 
