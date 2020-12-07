@@ -10,7 +10,7 @@ Below are the steps to use the Via API for the use case related to reassigning w
 
     var apiInstance = new AccessTokenApi();
     var realm = realm_example;  // string | organization to request an oauth token for
-    var scope = "provisioningapi;  // string | api permissions requested
+    var scope = "provisioningapi";  // string | api permissions requested
     var grantType = "client_credentials";  // string | token request type (default to client_credentials)
 
     try
@@ -26,9 +26,9 @@ Below are the steps to use the Via API for the use case related to reassigning w
 
   ```
 	
-- Step 2: Find the id of the work type to be adjusted.  Work types can be filtered by direction (inbound/outbound), channel (e.g. voice, sms) and queue type (e.g terminal).
+- **Step 2:** Find the id of the work type to be adjusted.  Work types can be filtered by direction (inbound/outbound), channel (e.g. voice, sms) and queue type (e.g terminal).
 
-  ```
+```
     var apiInstance = new GetWorkTypesCollectionApi();
     var orgId = orgId_example;  // string | 
     var authorization = authorization_example;  // string | Authentication token with the value: 'Bearer {accessToken}', where {accessToken} was returned from a call to the authorization endpoint
@@ -51,9 +51,9 @@ Below are the steps to use the Via API for the use case related to reassigning w
     {
         Debug.Print("Exception when calling GetWorkTypesCollection: " + e.Message );
     }
-  ```
+```
 
-- Step 3: Retrieve the current assigned users for the selected work type.
+- **Step 3:** Retrieve the current assigned users for the selected work type.
 
 ```
     var apiInstance = new GetWorkHandlersCollectionApi();
@@ -76,4 +76,4 @@ Below are the steps to use the Via API for the use case related to reassigning w
     }
 ```
 
-- Step 4: Update list of assigned users for the selected work type.
+- **Step 4:** Update list of assigned users for the selected work type.
