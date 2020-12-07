@@ -1,7 +1,8 @@
 # samplesdk
 Below are the steps to use the Via API for the use case related to reassigning work for agents.
 
- - Step 1: Exchange your client credentials for an oauth token.
+ - `Step 1`: Exchange your client credentials for an oauth token.
+ 
   ```
     // Configure HTTP basic authorization: basicAuth
     Configuration.Default.Username = "YOUR_USERNAME";
@@ -24,7 +25,9 @@ Below are the steps to use the Via API for the use case related to reassigning w
     }
 
   ```
+	
 - Step 2: Find the id of the work type to be adjusted.  Work types can be filtered by direction (inbound/outbound), channel (e.g. voice, sms) and queue type (e.g terminal).
+
   ```
     var apiInstance = new GetWorkTypesCollectionApi();
     var orgId = orgId_example;  // string | 
@@ -49,7 +52,9 @@ Below are the steps to use the Via API for the use case related to reassigning w
         Debug.Print("Exception when calling GetWorkTypesCollection: " + e.Message );
     }
 ```
+
 - Step 3: Retrieve the current assigned users for the selected work type.
+
 ```
     var apiInstance = new GetWorkHandlersCollectionApi();
     var orgId = orgId_example;  // string | 
@@ -70,4 +75,5 @@ Below are the steps to use the Via API for the use case related to reassigning w
         Debug.Print("Exception when calling GetWorkTypesCollection: " + e.Message );
     }
 ```
+
 - Step 4: Update list of assigned users for the selected work type.
