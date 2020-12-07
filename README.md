@@ -56,24 +56,24 @@ Below are the steps to use the Via API for the use case related to reassigning w
 - **Step 3:** Retrieve the current assigned users for the selected work type.
 
 ```
-    var apiInstance = new GetWorkHandlersCollectionApi();
-    var orgId = orgId_example;  // string | 
-    var authorization = authorization_example;  // string | Authentication token with the value: 'Bearer {accessToken}', where {accessToken} was returned from a call to the authorization endpoint
-    var xApiKey = xApiKey_example;  // string | Aspect-provided value used to track API endpoint usage.
-    var workTypeId = workTypeId_example; // string | Aspect-generated unique ID for a work type.  
+  var apiInstance = new GetWorkHandlersCollectionApi();
+  var orgId = orgId_example;  // string | 
+  var authorization = authorization_example;  // string | Authentication token with the value: 'Bearer {accessToken}', where {accessToken} was returned from a call to the authorization endpoint
+  var xApiKey = xApiKey_example;  // string | Aspect-provided value used to track API endpoint usage.
+  var workTypeId = workTypeId_example; // string | Aspect-generated unique ID for a work type.  
 
 
-    try
-    {
-        // Get WorkHandlersCollection
-        
-        WorkHandlerList result = apiInstance.GetWorkHandlersCollection (orgId, authorization, xApiKey, workTypeId);
-        Debug.WriteLine(result);
-    }
-    catch (Exception e)
-    {
-        Debug.Print("Exception when calling GetWorkTypesCollection: " + e.Message );
-    }
+  try
+  {
+      // Get WorkHandlersCollection
+      
+      WorkHandlerList result = apiInstance.GetWorkHandlersCollection (orgId, authorization, xApiKey, workTypeId);
+      Debug.WriteLine(result);
+  }
+  catch (Exception e)
+  {
+      Debug.Print("Exception when calling GetWorkTypesCollection: " + e.Message );
+  }
 ```
 
 - **Step 4:** Update list of assigned users for the selected work type.
