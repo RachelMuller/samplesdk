@@ -1,4 +1,9 @@
-# samplesdk
+## samplesdk
+## Disclaimer
+The code in this repo is sample code only. It is **NOT guaranteed to be bug free and production quality**.
+
+## Examples
+
 Below are the steps to use the Via API for the use case related to reassigning work for agents.
 
  - **Step 1:** Exchange your client credentials for an oauth token.
